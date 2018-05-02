@@ -3,7 +3,7 @@ Team Polar Studios Project
 Working on the Xion Project
 
 Team leads : 
-	Lead Character Designer : Jo√£o Pedro L. Grandinetti
+	Lead Character Designer : Jo„o Pedro L. Grandinetti
 	Lead Environment Designer : Archimedes Cruz III
 	Lead Programmers : Lucas Do Carmo & Ford Marklew
 	Lead Audio Designers : Logan Medford & Syed Shahwaiz Rizvi
@@ -11,3 +11,5 @@ Team leads :
 	Lead Writer : Lucas Do Carmo
 	Lead Editor : Ford Marklew
 	Project Manager : John Guzman
+	
+Made for Windows
