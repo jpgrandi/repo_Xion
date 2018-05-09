@@ -7,7 +7,9 @@ public class Player_Movement : MonoBehaviour {
     public float moveSpeed;
     public float jumpSpeed;
 
-    private float moveDir;
+    public bool isRightFacing;
+
+    public float moveDir;
     private Rigidbody2D rb;
 
     private Player_GroundDetection PGD;
@@ -21,6 +23,17 @@ public class Player_Movement : MonoBehaviour {
     void Update () {
         moveDir = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveSpeed * moveDir, rb.velocity.y);
+
+        if (Mathf.Ceil(moveDir) > 0)
+        {
+            transform.localScale = new Vector3(5, 5, 1);
+            isRightFacing = true;
+        }
+        else if (Mathf.Floor(moveDir) < 0)
+        {
+            isRightFacing = false;
+            transform.localScale = new Vector3(-5, 5, 1);
+        }
 
         if (Input.GetButtonDown("Jump") && PGD.isGrounded){
             Jump();
