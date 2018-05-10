@@ -283,6 +283,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera.cs" />
+    <Compile Include="Assets\Scripts\Enemy_AI.cs" />
+    <Compile Include="Assets\Scripts\Enemy_AI_Detection.cs" />
     <Compile Include="Assets\Scripts\PickupBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player_GroundDetection.cs" />
     <Compile Include="Assets\Scripts\Player_Movement.cs" />
