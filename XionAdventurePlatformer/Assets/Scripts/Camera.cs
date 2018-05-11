@@ -19,8 +19,7 @@ public class Camera : MonoBehaviour {
     private void Awake()
     {
         PM = player.GetComponent<Player_Movement>();
-        cameraPos.position = transform.position + new Vector3(offsetX, offsetY, 0);
-        
+        cameraPos.position = transform.position + new Vector3(offsetX, offsetY, -20);
     }
 
     private void FixedUpdate()
