@@ -1,6 +1,6 @@
 Game references:
 	- Fez; (puzzles)
 	- Thomas Was Alone; (mood and puzzles)
-	- Portal and Portal 2;
-	- The Talos Principle;
+	- Portal and Portal 2; (puzzle mechanics)
+	- The Talos Principle; (puzzle mechanics)
 	- Limbo; (story-telling)
