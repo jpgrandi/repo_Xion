@@ -24,7 +24,6 @@ public class Camera : MonoBehaviour {
 
     private void FixedUpdate()
     {
-
         if (PM.isRightFacing)
         {
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref vel, smoothTime);
