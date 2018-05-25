@@ -6,15 +6,14 @@ public class Camera : MonoBehaviour {
 
     public GameObject player;
     public Transform cameraPos;
+    private Player_Movement PM;
 
     public float offsetX;
     public float offsetY;
-    public float smoothTime;
-
-    private Player_Movement PM;
-    private Vector3 vel = Vector3.zero;
 
     private Vector3 targetPosition;
+    private Vector3 vel = Vector3.zero;
+    public float smoothTime;
 
     private void Awake()
     {
@@ -28,6 +27,7 @@ public class Camera : MonoBehaviour {
         {
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref vel, smoothTime);
             Debug.Log("Is Right Facing");
+            
         }
         else if (!PM.isRightFacing)
         {

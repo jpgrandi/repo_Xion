@@ -24,6 +24,14 @@ public class Player_Movement : MonoBehaviour {
         moveDir = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveSpeed * moveDir, rb.velocity.y);
 
+        //dir is a float equal to the "horizontal axis input," this helps us move the character,  because in update
+        //we are constantly updating the character rigid body velocity (rb.velocity)
+        //this means that each frame, the velocity has a new value
+        //that value will be a new Vector2 every frame
+        //its values are (moveSpeed*dir, rb.velocity.y)...for this example say moveSpeed is 5
+        //this means the x coordinate for the Vector2 will be 5*dir(dir can be between -1 and 1)
+        //if 5*-1 for example, the new Vector2 will be -5 for the x coordinate, meaning the character will move left
+
         if (Mathf.Ceil(moveDir) > 0)
         {
             transform.localScale = new Vector3(5, 5, 1);
